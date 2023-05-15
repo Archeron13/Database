@@ -32,7 +32,7 @@ create table restaurant.orders(
     cust_id int,
     cost int not null,
 
-    foreign key (cust_id) references restaurant.customer(cust_id),
+    foreign key (cust_id) references restaurant.customer(cust_id)
 );
 
 create table restaurant.bar(
