@@ -14,13 +14,18 @@ create table restaurant.employees(
 
 create table restaurant.tables(
     table_no int primary key,
-    cust_id int,
     emp_id int not null,
     addit_req text,
 
-    foreign key (cust_id) references restaurant.customer(cust_id),
     foreign key (emp_id) references restaurant.employees(emp_id)
 );
+
+CREATE TABLE restaurant.sitting (
+    table_no INT,
+    cust_id INT PRIMARY KEY,
+    FOREIGN KEY (table_no) REFERENCES restaurant.tables(table_no)
+);
+
 
 create table restaurant.orders(
     order_id int primary key,
