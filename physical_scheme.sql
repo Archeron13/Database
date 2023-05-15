@@ -50,7 +50,8 @@ create table restaurant.dishes(
 );
 
 create table restaurant.raw_ingredient(
-    ing_id int primary key,
+    ing_id int,
+    ing_name char(50),
     dish_id int,
     avail bool not null,
 
