@@ -13,7 +13,8 @@ create table restaurant.employees(
 );
 
 create table restaurant.tables(
-    table_no int primary key,
+    table_no int,
+    dish_name char(50),
     cust_id int,
     emp_id int not null,
     addit_req text,
