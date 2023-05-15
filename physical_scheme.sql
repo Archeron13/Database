@@ -30,11 +30,9 @@ CREATE TABLE restaurant.sitting (
 create table restaurant.orders(
     order_id int primary key,
     cust_id int,
-    table_no int,
     cost int not null,
 
     foreign key (cust_id) references restaurant.customer(cust_id),
-    foreign key (table_no) references restaurant.tables(table_no)
 );
 
 create table restaurant.bar(
