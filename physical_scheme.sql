@@ -56,7 +56,6 @@ create table restaurant.raw_ingredient(
     dish_id int,
     avail bool not null,
 
-    foreign key (dish_id) references restaurant.dishes(dish_id)
 );
 
 create table restaurant.corporation(
