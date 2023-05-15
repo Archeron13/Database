@@ -43,7 +43,8 @@ create table restaurant.bar(
 );
 
 create table restaurant.dishes(
-    dish_id int primary key,
+    dish_id int,
+    dish_name char(50),
     order_id int not null,
     est_time int,
 
