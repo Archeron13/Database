@@ -49,6 +49,7 @@ create table restaurant.dishes(
     dish_name char(50),
     order_id int not null,
     est_time int,
+    dish_cost int,
 
     foreign key (order_id) references restaurant.orders(order_id)
 );
