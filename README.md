@@ -3,11 +3,11 @@ The repository of my project for Databases 2023.
 
 ___
 
-#![Logical Model](Docs/Logical_Model.png?raw=true)
+![Logical Model](Docs/Logical_Model.png?raw=true)
 
 ___
 
-#![Physical Model](Docs/description.md?raw=true)
+![Physical Model](Docs/description.md?raw=true)
 
 | Table Name       | Field Name        | Description                                                      | Data Type    |
 |------------------|-------------------|------------------------------------------------------------------|--------------|
@@ -44,6 +44,29 @@ ___
 |                   | table_no            | The number of the table where the customer is sitting.         | INT          |
 
 ___
+### Task 3: [DDL.sql](https://github.com/Archeron13/Database/blob/main/scripts/DDL.sql)
+___
+### Task 4: [insert_query.sql](https://github.com/Archeron13/Database/blob/main/scripts/insert_query.sql)
+___
+### Task 5: [CRUD.sql](https://github.com/Archeron13/Database/blob/main/scripts/CRUD.sql)
+___
+### Task 6 
+1. ## Queries: [select.sql](https://github.com/Archeron13/Database/blob/main/scripts/select.sql)
+2. ## Tests: [select_test.sql](https://github.com/Archeron13/Database/blob/main/Test/select_test.py)
+___
+### Task 7: [select_test.sql](https://github.com/Archeron13/Database/blob/main/Test/select_test.py)
+___
+### Task 8: [index.sql](https://github.com/Archeron13/Database/blob/main/scripts/index.sql)
+___
+### Task 9
+1. ## Queries: [views.sql](https://github.com/Archeron13/Database/blob/main/scripts/views.sql)
+2. ## Tests: [view_test.py](https://github.com/Archeron13/Database/blob/main/Test/views_test.py)
+___
+### Task 10
+1. ## Queries: [stored.sql](https://github.com/Archeron13/Database/blob/main/Test/views_test.py)
+2. ## Tests: [stored_test.py](https://github.com/Archeron13/Database/blob/main/Test/stored_test.py)
+___
+### Tasl 11: [triggers.sql](https://github.com/Archeron13/Database/blob/main/scripts/triggers.sql)
 
 
 
