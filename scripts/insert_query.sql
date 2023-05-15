@@ -1,0 +1,237 @@
+INSERT INTO restaurant.customer (cust_id, cust_name)
+VALUES
+    (1, 'John Connors'),
+    (2, 'Jane Doe'),
+    (3, 'Lionel Messi'),
+    (4, 'Emily Wilson'),
+    (5, 'David Thompson'),
+    (6, 'Sarah Adams'),
+    (7, 'Robert Lewandowski'),
+    (8, 'Jennifer Davis'),
+    (9, 'William Clark'),
+    (10, 'Olivia Anderson'),
+    (11, 'Aryan Jaira'),
+    (12, 'Amom De Armado'),
+    (13, 'Michael Johnson'),
+    (14, 'Rob Carlos'),
+    (15, 'Kylian Mbappe'),
+    (16, 'Jean Jacques Fernandes'),
+    (17, 'Florentino Perez'),
+    (18, 'Logan Laplace'),
+    (19, 'Mark Manson'),
+    (20, 'Jennifer Aniston'),
+    (21, 'Kristina Yunikova'),
+    (22, 'Daniel Cauchy');
+
+INSERT INTO restaurant.employees (emp_id, job, present, emp_sal)
+VALUES
+    (1, 'Waiter', true, 2500),
+    (2, 'Waiter', true, 3500),
+    (3, 'Waiter', false, 3000),
+    (4, 'Waiter', true, 3000),
+    (5, 'Waiter', true, 2560),
+    (6, 'Busser', true, 1800),
+    (7, 'Dishwasher', false, 1500),
+    (8, 'Server', true, 2200),
+    (9, 'Cook', true, 3500),
+    (10, 'Assistant Manager', true, 4500),
+    (11, 'Waiter', true, 2400),
+    (12, 'Waiter', true, 2300),
+    (13, 'Chef', true, 4200),
+    (14, 'Chef', true, 3900),
+    (15, 'Bartender', false, 2800),
+    (16, 'Bartender', true, 3200),
+    (17, 'Manager', true, 4800),
+    (18, 'Manager', true, 5000),
+    (19, 'Host/Hostess', true, 1900),
+    (20, 'Host/Hostess', true, 2100);
+
+
+INSERT INTO restaurant.tables (table_no, emp_id, addit_req)
+VALUES
+    (1, 1, 'Extra napkins'),
+    (2, 2, 'Window seat'),
+    (3, 3, NULL),
+    (4, 4, NULL),
+    (5, 5, 'Vegetarian menu'),
+    (6, 1, NULL),
+    (7, 2, 'Allergies: Gluten'),
+    (8, 3, 'Anniversary celebration'),
+    (9, 4, 'Birthday cake'),
+    (10,5, NULL),
+    (11,11, NULL),
+    (12,12, 'Outdoor seating'),
+    (13,11, NULL),
+    (14,12, NULL),
+    (15, 1, 'Large group reservation');
+ 
+
+
+INSERT INTO restaurant.sitting (table_no, cust_id)
+VALUES
+    (2,1),
+    (3,2),
+    (4,3),
+    (1,4),
+    (5,5),
+    (5,6),
+    (5,7),
+    (6,8),
+    (7,9),
+    (7,10),
+    (8,11),
+    (8,12),
+    (9,13),
+    (9,14),
+    (10,15),
+    (12,16),
+    (15,17),
+    (15,18),
+    (15,19),
+    (15,20),
+    (15,21),
+    (1,22);
+
+
+
+INSERT INTO restaurant.orders (order_id, cust_id, cost)
+VALUES
+    (1,1,490),
+    (2,2,230),
+    (3,3,340),
+    (4,4,220),
+    (5,6,421),
+    (6,7,237),
+    (7,8,43),
+    (8,9,200),
+    (9,10,234),
+    (10,11,500),
+    (11,12,540),
+    (12,13,120),
+    (13,14,204),
+    (14,15,231),
+    (15,16,600),
+    (16,17,220),
+    (17,18,600),
+    (18,19,400),
+    (19,20,260),
+    (20,21,560),
+    (21,22,360),
+    (22,5,239);
+
+
+INSERT INTO restaurant.bar (drink_id, order_id, drink_avail, drink_cost)
+VALUES
+    (21, 2, true, 15),
+    (21, 2, true, 15),
+    (10, 3, false, 8),
+    (15, 3, true, 12),
+    (1, 4, true, 10),
+    (1, 4, true, 15),
+    (6, 5, true, 12),
+    (15, 5, true, 12),
+    (12, 6, true, 10),
+    (15, 6, true, 12),
+    (13, 21, true, 50),
+    (15, 18, true, 5),
+    (15, 20, true, 24),
+    (15, 16, true, 12),
+    (11, 15, true, 5),
+    (13, 14, true, 50);
+
+INSERT INTO restaurant.dishes (dish_id, dish_name, order_id, est_time,dish_cost)
+VALUES
+    (1, 'Spaghetti Carbonara', 1, 25,100),
+    (2, 'Margherita Pizza', 2, 30,300),
+    (2, 'Margherita Pizza', 3, 30,300),
+    (1, 'Spaghetti Carbonara', 3, 25,100),
+    (3, 'Grilled Chicken Salad', 2, 20,124),
+    (4, 'Garlic Bread', 4, 15,500),
+    (4, 'Garlic Bread', 5, 15,500),
+    (4, 'Garlic Bread', 6, 15,500),
+    (5, 'Caesar Salad', 4, 20,124),
+    (6, 'Mushroom Risotto', 6, 30,200),
+    (3, 'Grilled Chicken Salad', 1, 20,124),
+    (6, 'Mushroom Risotto', 7, 30,200),
+    (5, 'Caesar Salad', 5, 20,124),
+    (7, 'Beef Burger', 7, 25,600),
+    (8, 'Fish and Chips', 8, 35,640),
+    (9, 'Chicken Parmesan',12, 10, 430),
+    (10, 'Tiramisu', 13, 15,900),
+    (11, 'Butter Chicken',13,25,500),
+    (8, 'Fish and Chips', 9, 35,640),
+    (9, 'Chicken Parmesan', 10, 30, 430),
+    (9, 'Chicken Parmesan', 11, 30, 430),
+    (10, 'Tiramisu', 15, 15,900),
+    (11, 'Butter Chicken',16,25,500);
+
+INSERT INTO restaurant.raw_ingredient (ing_id, ing_name, dish_id, avail)
+VALUES
+    (1, 'Pasta', 1, true),
+    (2, 'Bacon', 1, true),
+    (3, 'Eggs', 1, true),
+    (4, 'Parmesan Cheese', 1, true),
+    (5, 'Spaghetti Sauce', 1, true),
+    (6, 'Pizza Dough', 2, true),
+    (7, 'Tomato Sauce', 2, true),
+    (8, 'Mozzarella Cheese', 2, true),
+    (9, 'Basil', 2, true),
+    (10, 'Pasta', 3, true),
+    (11, 'Bacon', 3, true),
+    (12, 'Eggs', 3, true),
+    (13, 'Parmesan Cheese', 3, true),
+    (14, 'Spaghetti Sauce', 3, true),
+    (15, 'Chicken Breast', 4, true),
+    (16, 'Lettuce', 4, true),
+    (17, 'Tomatoes', 4, true),
+    (18, 'Croutons', 4, true),
+    (19, 'Caesar Dressing', 4, true),
+    (20, 'Bread', 5, true),
+    (21, 'Garlic', 5, true),
+    (22, 'Butter', 5, true),
+    (23, 'Olive Oil', 5, true),
+    (24, 'Parmesan Cheese', 5, true),
+    (25, 'Rice', 6, true),
+    (26, 'Mushrooms', 6, true),
+    (27, 'Onion', 6, true),
+    (28, 'Garlic', 6, true),
+    (29, 'Vegetable Broth', 6, true),
+    (30, 'Chicken Breast', 7, true),
+    (31, 'Burger Buns', 7, true),
+    (32, 'Lettuce', 7, true),
+    (33, 'Tomatoes', 7, true),
+    (34, 'Cheese Slices', 7, true),
+    (35, 'Fish Fillet', 8, true),
+    (36, 'Potatoes', 8, true),
+    (37, 'Tartar Sauce', 8, true),
+    (38, 'Lemon Wedges', 8, true),
+    (39, 'Chicken Breast', 9, true),
+    (40, 'Bread Crumbs', 9, true),
+    (41, 'Tomato Sauce', 9, true),
+    (42, 'Mozzarella Cheese', 9, true),
+    (43, 'Pasta', 10, true),
+    (44, 'Eggs', 10, true),
+    (45, 'Sugar', 10, true),
+    (46, 'Mascarpone Cheese', 10, true),
+    (47, 'Cocoa Powder', 10, true),
+    (48, 'Chicken Breast', 11, true),
+    (49, 'Butter', 11, true),
+    (50, 'Tomato Sauce', 11, true);
+
+
+INSERT INTO restaurant.corporation (corp_id, table_no, discount, corp_name)
+VALUES
+    (1, NULL, 10, 'ABC Corp'),
+    (2, NULL, 15, 'XYZ Corp'),
+    (3, NULL, 20, 'PQR Corp'),
+    (4, 10, 10, 'LMN Corp'),
+    (5, NULL, 5, 'DEF Corp'),
+    (6,  5, 15, 'GHI Corp'),
+    (7, NULL, 20, 'JKL Corp'),
+    (8, NULL, 10, 'MNO Corp'),
+    (9, NULL, 5, 'QRS Corp'),
+    (10, 15, 15, 'STU Corp');
+
+
+
+
